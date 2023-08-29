@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Archivo:wght@800&family=Cabin:wght@500&family=Cinzel+Decorative:wght@900&family=Dancing+Script:wght@500&family=Great+Vibes&family=Lobster+Two:wght@700&family=Montserrat:wght@500&family=Noto+Naskh+Arabic:wght@600&family=Nunito+Sans:wght@300&family=Roboto+Mono:wght@700&display=swap');
+*{
+    /* outline: red solid 2px; */
+    box-sizing: border-box;
+    padding: 0;
+    transition: all 0.3s ease 0s;
+    scroll-behavior: smooth;
+}
+a, button{
+    cursor: pointer;
+    text-decoration: none;
+}
+body{
+    background-image: url(/images/background\ \(3\).jpg);
+    background-size: cover;
+    padding: 0px;
+}
+
+
+                /* NAVIGATION BAR */
+header{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 0 30px black;
+    z-index: 50;
+}
+.logo{
+    margin: 0 0 0 -90px;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    padding: 5px;
+    background-color: rgb(255, 194, 81);
+}
+.nav-links li{
+    list-style: none;
+    display: inline-block;
+}
+.nav-links li>a{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+    font-size: 14px;
+    color: white;
+    padding: 12px 25px;
+    margin-right: 40px;
+}
+.nav-links li>a:hover{
+    color: rgb(177, 134, 53);
+    border-bottom: 3px solid rgb(177, 134, 53);
+}
+
+            /* TOP SECTION */
+
+.top{
+    margin: 0 0 30px 0;
+    background-position-y: 50%;
+    background-image: url(/images/dessert\ background\ \(1\).jpg);
+    height: 600px;
+    width: 100%;
+    background-size: cover;
+}
+.top>h1{
+    margin: 200px 0 0 100px;
+    /* text edit */
+    font-family: "Great Vibes", sans-serif;
+    font-weight: 800;
+    font-size: 110px;
+    text-align: center;
+    color: rgb(177, 134, 53);
+    text-shadow: 0 0 30px black;
+}
+
+            /* PANCAKE MENU */
+
+.starters-menu{
+    background-color: white;
+    padding: 50px;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.poster-one-i{
+    width: 30%;
+    height: 500px;
+    padding: 5px 50px;
+    background-image: url(/images/pexels-rama-khandkar-2113556.jpg);
+    background-size: cover;
+    /* text edit */
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: rgb(252, 251, 250);
+    text-align: center;
+}
+.special{
+    color: rgb(177, 134, 53);
+    font-weight: 800;
+}
+.poster-two{
+    width: 70%;
+    height: 500px;
+    padding: 10px;
+    background-color: white;
+}
+.poster-two-gap-i{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.poster-two>h1{
+    margin: 5px 0 5px 0;
+    font-family: "Great Vibes";
+    font-weight: 800;
+    font-size: 80px;
+    text-align: center;
+    color: rgb(177, 134, 53);
+}
+.poster-two>h2{
+    margin: -15px 0 20px 0;
+    font-family: roboto mono;
+    text-align: center;
+
+}
+.poster-two-one{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    /* text-edit */
+    width: 50%;
+    height: fit-content;
+    margin-top: 50px;
+}
+.dessert{
+    padding: 12px;
+    width: 50%;
+    text-align: left;
+}
+.price{
+    padding: 12px;
+    width: 50%;
+    text-align: right;
+}
+.item p{
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+            /* SANDWICH MENU */
+
+.main-menu{
+    background-color: white;
+    padding: 50px;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+}
+.poster-one-ii{
+    width: 30%;
+    height: 500px;
+    padding: 5px 50px;
+    background-image: url(/images/sandwich\ \(4\).jpg);
+    background-position-x: 20%;
+    background-size: cover;
+    /* text edit */
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: rgb(252, 251, 250);
+    text-align: center;
+}
+.poster-one-iii{
+    width: 30%;
+    height: 500px;
+    padding: 5px 50px;
+    background-image: url(/images/pexels-kristina-paukshtite-3060255.jpg);
+    background-position-x: 20%;
+    background-size: cover;
+    /* text edit */
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: rgb(252, 251, 250);
+    text-align: center;
+}
+.poster-one-iv{
+    width: 30%;
+    height: 500px;
+    padding: 5px 50px;
+    background-image: url(/images/creme-brulee.jpg);
+    background-position-x: 20%;
+    background-size: cover;
+    /* text edit */
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: rgb(252, 251, 250);
+    text-align: center;
+}
+.poster-two-gap-ii{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+/* FOOTER  */
+
+footer{
+    display: flex;
+    flex-direction: row;
+    align-items:flex-end;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    bottom: 0;
+    position: relative;
+    width: 100%;
+    box-shadow: 0 0 30px black;
+    background-color: rgb(0, 0, 0);
+        /* text edit */
+        font-family: "Montserrat", sans-serif;
+        font-weight: 50;
+        font-size: 13px;
+        color: rgb(255, 255, 255);
+}
+.footer-describe{
+    top: 0;
+    width: 300px;
+    height: fit-content;
+    padding: 5px;
+    text-align: right;
+}
+.footer-links>a{
+    top: 0;
+    width: fit-content;
+    padding: 10px;
+    display: block;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 50;
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+}
+.footer-links>a:hover{
+    color: rgb(177, 134, 53);
+    border-bottom: 1px solid rgb(177, 134, 53);
+}
+.socials{
+    margin: 0 100px;
+    top: 0;
+    width: fit-content;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.follow{
+    margin-bottom: 30px;
+    /* text edit */
+    font-family: "Montserrat", sans-serif;
+    font-weight: 50;
+    font-size: 17px;
+    text-align: center;
+    color: rgb(177, 134, 53);
+    border: 1px solid  rgb(177, 134, 53);
+}
+.social-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.social-icons a>img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
